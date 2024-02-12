@@ -1,5 +1,8 @@
 package isthatkirill.datagenerator.web.mapper;
 
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
 /**
  * @author Kirill Emelyanov
  */

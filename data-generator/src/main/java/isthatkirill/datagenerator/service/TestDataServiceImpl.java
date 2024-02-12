@@ -7,7 +7,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Random;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -36,13 +35,13 @@ public class TestDataServiceImpl implements TestDataService {
                                 .to(getRandomInteger(1000_0000_0000_0000L, 9999_9999_9999_9999L))
                                 .timestamp(LocalDateTime.now())
                                 .build();
-                        
+
                         kafkaDataService.send(data);
                     },
                     0,
                     testOptions.getDelay(),
                     TimeUnit.SECONDS
-                    );
+            );
         }
     }
 

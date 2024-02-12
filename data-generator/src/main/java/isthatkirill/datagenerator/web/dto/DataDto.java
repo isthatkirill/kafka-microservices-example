@@ -2,14 +2,11 @@ package isthatkirill.datagenerator.web.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import isthatkirill.datagenerator.model.CurrencyType;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
+import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDateTime;
 
@@ -19,6 +16,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@Slf4j
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class DataDto {

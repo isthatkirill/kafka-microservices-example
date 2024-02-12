@@ -18,7 +18,7 @@ public class BeanConfig {
     @Bean
     @SneakyThrows
     public XML producerXML() {
-        return new XMLDocument(new File("/src/main/resources/kafka/producer.xml"));
+        return new XMLDocument(new File("data-generator/src/main/resources/kafka/producer.xml"));
     }
 
 
