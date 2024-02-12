@@ -40,6 +40,7 @@ public class DataDto {
     private Double amount;
 
     @NotNull
+    //TODO VALID ENUM
     private CurrencyType currencyType;
 
 }
