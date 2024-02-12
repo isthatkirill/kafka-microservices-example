@@ -1,9 +1,6 @@
 package isthatkirill.datagenerator.model;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDateTime;
@@ -14,15 +11,17 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Data {
 
-    private Long bankId;
-    private LocalDateTime timestamp;
-    private Long from;
-    private Long to;
-    private Double amount;
-    private CurrencyType currencyType;
+    Long bankId;
+    LocalDateTime timestamp;
+    Long from;
+    Long to;
+    Double amount;
+    CurrencyType currencyType;
 
 }

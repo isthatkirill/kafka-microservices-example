@@ -61,7 +61,7 @@ public class KafkaConfig {
                 ).build();
     }
 
-    @Bean
+    @Bean //producer.xml have serializers
     public SenderOptions<String, Object> senderOptions() {
         Map<String, Object> props = new HashMap<>();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, servers);
