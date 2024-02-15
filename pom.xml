@@ -18,6 +18,7 @@
 
     <modules>
         <module>data-generator</module>
+        <module>data-statistics</module>
     </modules>
 
     <properties>
