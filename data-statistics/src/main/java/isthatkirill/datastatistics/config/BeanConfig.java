@@ -19,7 +19,8 @@ public class BeanConfig {
     @SneakyThrows
     public XML consumerXML() {
         return new XMLDocument(
-                new File("data-statistics/src/main/resources/kafka/consumer.xml")
+                getClass().getResourceAsStream("/kafka/consumer.xml")
+                        .readAllBytes()
         );
     }
 
