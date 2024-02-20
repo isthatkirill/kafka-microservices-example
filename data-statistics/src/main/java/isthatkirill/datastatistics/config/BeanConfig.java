@@ -1,4 +1,4 @@
-package isthatkirill.datagenerator.config;
+package isthatkirill.datastatistics.config;
 
 import com.jcabi.xml.XML;
 import com.jcabi.xml.XMLDocument;
@@ -17,9 +17,9 @@ public class BeanConfig {
 
     @Bean
     @SneakyThrows
-    public XML producerXML() {
+    public XML consumerXML() {
         return new XMLDocument(
-                getClass().getResourceAsStream("/kafka/producer.xml")
+                getClass().getResourceAsStream("/kafka/consumer.xml")
                         .readAllBytes()
         );
     }
