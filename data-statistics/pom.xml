@@ -8,8 +8,10 @@
         <version>3.2.2</version>
     </parent>
 
+    <groupId>isthatkirill</groupId>
     <artifactId>data-statistics</artifactId>
     <name>data-statistics</name>
+    <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <java.version>17</java.version>
@@ -82,7 +84,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-
                 <configuration>
                     <excludes>
                         <exclude>

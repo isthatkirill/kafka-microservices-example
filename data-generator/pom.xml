@@ -9,6 +9,7 @@
         <version>3.2.2</version>
     </parent>
 
+    <groupId>isthatkirill</groupId>
     <artifactId>data-generator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>data-generator</name>
