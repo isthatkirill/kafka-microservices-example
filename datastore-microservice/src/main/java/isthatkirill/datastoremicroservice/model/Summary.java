@@ -25,11 +25,13 @@ public class Summary {
         this.values = new HashMap<>();
     }
 
-    public void addValues(CurrencyType type, SummaryEntry entry) {
+    public void addValue(CurrencyType type, SummaryEntry entry) {
         if (values.containsKey(type)) {
             List<SummaryEntry> entries = new ArrayList<>(values.get(type));
             entries.add(entry);
             values.put(type, entries);
+        } else {
+            values.put(type, List.of(entry));
         }
     }
 
@@ -40,7 +42,7 @@ public class Summary {
     public static class SummaryEntry {
 
         private SummaryType type;
-        private Double values;
+        private Double value;
 
     }
 

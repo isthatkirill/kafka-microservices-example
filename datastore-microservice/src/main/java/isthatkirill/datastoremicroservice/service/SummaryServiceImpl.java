@@ -6,7 +6,6 @@ import isthatkirill.datastoremicroservice.model.SummaryType;
 import isthatkirill.datastoremicroservice.model.exception.BankNotFoundException;
 import isthatkirill.datastoremicroservice.repository.SummaryRepository;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -15,7 +14,6 @@ import java.util.Set;
  * @author Kirill Emelyanov
  */
 
-@Slf4j
 @Service
 @RequiredArgsConstructor
 public class SummaryServiceImpl implements SummaryService {

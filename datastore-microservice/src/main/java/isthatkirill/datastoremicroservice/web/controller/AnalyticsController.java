@@ -23,7 +23,6 @@ public class AnalyticsController {
     private final SummaryService summaryService;
     private final SummaryMapper summaryMapper;
 
-
     @GetMapping("/summary/{bankId}")
     public SummaryDto getSummary(@PathVariable Long bankId,
                                  @RequestParam(value = "ct", required = false) Set<CurrencyType> currencyTypes,
