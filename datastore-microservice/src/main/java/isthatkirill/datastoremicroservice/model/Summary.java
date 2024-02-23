@@ -21,17 +21,6 @@ public class Summary {
     Long bankId;
     Map<CurrencyType, List<SummaryEntry>> values;
 
-    @Getter
-    @Setter
-    @ToString
-    @NoArgsConstructor
-    public static class SummaryEntry {
-
-        private SummaryType type;
-        private Double values;
-
-    }
-
     public Summary () {
         this.values = new HashMap<>();
     }
@@ -42,6 +31,17 @@ public class Summary {
             entries.add(entry);
             values.put(type, entries);
         }
+    }
+
+    @Getter
+    @Setter
+    @ToString
+    @NoArgsConstructor
+    public static class SummaryEntry {
+
+        private SummaryType type;
+        private Double values;
+
     }
 
 }
